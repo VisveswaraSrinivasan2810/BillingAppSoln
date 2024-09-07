@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BillApp.Models": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
