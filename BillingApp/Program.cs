@@ -21,7 +21,8 @@ builder.Services.AddDbContext<BillAppDbContext>(options =>
 #region Dependency Injection
 builder.Services.AddTransient(typeof(IGenericRepository<>),typeof(GenericService<>));
 builder.Services.AddTransient<ICustomerRepository,CustomerService>();
-
+builder.Services.AddTransient<IProductRepository,ProductService>(); ;
+builder.Services.AddTransient<IInvoiceRepository,InvoiceService>();
 #endregion
 
 var app = builder.Build();
